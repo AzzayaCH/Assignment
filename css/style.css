@@ -16,6 +16,7 @@ img{
 .container{
     max-width: 1280px;
     margin: 0 auto;
+    /* flex-wrap: wrap; */
 }
 body{
     font-family: 'Poppins', sans-serif;
@@ -33,6 +34,16 @@ li{
 }
 
 /* a p h1-6 styles  */
+.buttons a{
+    text-decoration: none;
+    background-color: #DCEAF5;
+    border-color: #DCEAF5;
+    color: #063255;
+}
+.buttons a:hover{
+    background-color: #F58A07;
+    color: white;
+}
 a{
     text-decoration: none;
     color: #F58A07;
@@ -124,7 +135,9 @@ h4{
 }
 .header-img{
    flex: 1 500px;
-   vertical-align: bottom;
+}
+img {
+    vertical-align: bottom;
 }
 .left{
     padding-left: 5%;
@@ -176,12 +189,14 @@ h3{
     margin: 10px;
     padding: 10px;
 }
-#fifth{
+.fifth-container{
     background-color: #DCEAF5;
     border-radius: 30px;
     height: 600px;
     max-width: 1300px;
-    margin: 10px auto;
+    position: relative;
+    padding: 2rem;
+    /* margin: 10px auto; */
 }
 #eighth{
     background-color: #DCEAF5;
@@ -214,7 +229,7 @@ border-top-right-radius: 30px;
 }
 .solution-image-top img{
     border-radius: 30px;
-    margin: auto auto 50px auto;
+    /* margin: auto auto 50px auto; */
 }
 .fourth-text h2{
     margin: 90px 110px auto auto;
@@ -226,21 +241,19 @@ border-top-right-radius: 30px;
     font-size: 1.75rem;
     margin-top: 50px;
 }
-.fifth-text{
-    margin: 50px 80px 20px 100px;
-}
-.fifth-image{
-    margin: 0px 20px 30px auto;
-}
-a.btn-one{
-    margin: auto auto 5px 30px;
-}
 
+.fifth-image{
+    text-align: right;
+}
 .part-one{
     margin: 60px 30px 0 0;
 }
 .vacancy{
     background-color:#F58A07;
+    padding: 5rem;
+}
+.vacancy a{
+    display: inline-block;
 }
 .bottom-text{
     padding: 30px;
@@ -262,20 +275,18 @@ a.btn-one{
     color: #5B5B5B;
     padding: 10px;
     border-radius: 30px;
+    display: inline-block;
 }  
 .groups {
-    margin: 5px auto 0px 30px;
+    /* margin: 5px auto 0px 30px; */
+    margin-bottom: 2rem;
 } 
-.vacancy h2{
-    margin: 120px 400px 50px 100px;
-}
-.vacancy a{
+.orange-btn{
     background-color:white;
     color:#F58A07;
-    padding: 15px 30px;
-    width: 30px;
+    padding: 3% 10%;
+    margin-top: 2rem;
     border-radius: 30px;
-    margin: auto 100px;
 }
 .vacancy-1{
     background-color: white;
@@ -289,8 +300,10 @@ a.btn-one{
     width: 40px;
     border-radius: 30px;
 }
-/* .absolute {
+.absolute {
     position: relative;
+    align-items: center;
+    width: fit-content;
 }
 .absolute::before {
     content: '';
@@ -299,17 +312,32 @@ a.btn-one{
     background-color: #F58A07;
     mix-blend-mode: multiply;
     border-radius: 30px 0 0 30px;
-} */
+}
 
 #fifth{
     position: relative;
 }
+.fifth-image{
+   margin-left: auto;
+}
 
-.fifth-image .ribbon{
+.ribbon{
     position: absolute;
     display: block;
     top: -15px;
     right: -15px;
 } 
+.fa-brands{
+    color: white;
+}
 
-
+.womanhead{
+    vertical-align: bottom;
+}
+.team{
+    vertical-align: bottom;
+}
+#first{
+    padding-bottom: 0;
+    vertical-align: bottom;
+}
