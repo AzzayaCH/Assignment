@@ -89,7 +89,7 @@ a{
    display:flex;
 }
 .background{
-    background-image: url("./images/experience-image.png");
+    background-image: url("../images/experience-image.png");
     background-size: cover;
     height: 518px;
     margin: 0;
